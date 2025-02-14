@@ -1,3 +1,5 @@
+import { SignInButton, SignOutButton } from "@clerk/nextjs";
+
 export const Navigation = () => {
     return (
       <nav className="bg-[var(--background)] border-b border-[var(--foreground)]">
@@ -10,6 +12,8 @@ export const Navigation = () => {
             </div>
             <div className="flex items-center gap-4">
               {/* Sign in button goes here */}
+              <SignInButton mode="modal"/>
+              <SignOutButton/>
             </div>
           </div>
         </div>
